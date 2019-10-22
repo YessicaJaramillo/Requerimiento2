@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="form1.aspx.cs" Inherits="Requerimiento.form1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Form1.aspx.cs" Inherits="Requerimiento2.Form1" %>
 
 <!DOCTYPE html>
 
@@ -13,14 +13,15 @@
         <div class="form-group text-center">
             <h1 class="text-center">Registro de clientes</h1>
             <br />
-            <asp:Label ID="lblDocumento" runat="server" Text="Documento de identidad"></asp:Label>
-            <asp:TextBox ID="txtDocumento" runat="server" ></asp:TextBox>
-            <br /><br />
+            
             <asp:Label ID="lblNombre" runat="server" Text="Nombre"></asp:Label>
             <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
             <br /><br />
             <asp:Label ID="lblApellido" runat="server" Text="Apellidos"></asp:Label>
             <asp:TextBox ID="txtApellidos" runat="server"></asp:TextBox>
+            <br /><br />
+            <asp:Label ID="lblDocumento" runat="server" Text="Documento de identidad"></asp:Label>
+            <asp:TextBox ID="txtDocumento" runat="server" ></asp:TextBox>
             <br /><br />
             <asp:Label ID="lblDireccion" runat="server" Text="Direccion"></asp:Label>
             <asp:TextBox ID="txtDireccion" runat="server" ></asp:TextBox>
@@ -41,17 +42,18 @@
             <br />
             <asp:RadioButton ID="rbJuridica" runat="server" />
             <asp:Label ID="lblJuridica" runat="server" Text="Juridica"></asp:Label>
+            <br /><br />
+            <asp:Label ID="lblCiudad" runat="server" Text="Ciudad"></asp:Label>
+            <asp:DropDownList ID="ddlCiudad" runat="server">
+
+            </asp:DropDownList>
             <br />
-            <asp:Button ID="btnEnviar" runat="server" Text="Enviar" />
-            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" />
-            
+            <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click" />
+            <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" OnClick="btnLimpiar_Click" />
         </div>
     </form>
 
-
-
-
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
