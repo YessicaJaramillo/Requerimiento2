@@ -19,6 +19,8 @@ namespace Requerimiento2
             txtTelefono.Text= Session["telefono"].ToString();
             txtElectronico.Text= Session["electronico"].ToString();
             txtNacimiento.Text= Session["nacimiento"].ToString();
+            txtPersona.Text = Session["TipoPersona"].ToString();
+            txtCiudad.Text = Session["ciudad"].ToString();
 
         }
 

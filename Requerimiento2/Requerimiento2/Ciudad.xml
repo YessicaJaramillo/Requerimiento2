@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pais>
+  <Ciudad>
+    <NombreCiudad></NombreCiudad>
+  </Ciudad>
+  <Ciudad>
+    <NombreCiudad>Bogota</NombreCiudad>
+  </Ciudad>
+  <Ciudad>
+    <NombreCiudad>Medellin</NombreCiudad>
+  </Ciudad>
+  <Ciudad>
+    <NombreCiudad>Cali</NombreCiudad>
+  </Ciudad>
+  <Ciudad>
+    <NombreCiudad>Cartagena</NombreCiudad>
+  </Ciudad>
+  <Ciudad>
+    <NombreCiudad>Neiva</NombreCiudad>
+  </Ciudad>  
+</Pais>

@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ciudad.xml" />
     <Content Include="Form1.aspx" />
     <Content Include="Form2.aspx" />
     <Content Include="Web.config" />

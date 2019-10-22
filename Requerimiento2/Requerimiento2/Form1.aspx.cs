@@ -4,24 +4,22 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Requerimiento2
 {
     public partial class Form1 : System.Web.UI.Page
     {
-        string nombre;
-        string apellido;
-        string documento;
-        string direccion;
-        string telefono;
-        string electronico;
-        string nacimiento;
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             if(!IsPostBack)
             {
-             
-
+                DataSet set = new DataSet();
+                set.ReadXml(Server.MapPath("Ciudad.xml"));
+                ddlCiudad.DataSource = set;
+                ddlCiudad.DataTextField = "NombreCiudad";
+                ddlCiudad.DataBind();
             }
         }
 
@@ -46,7 +44,19 @@ namespace Requerimiento2
             Session["electronico"] = txtElectronico.Text;
             Session["nacimiento"] = txtNacimiento.Text;
 
+            if(rbNatural.Checked == true)
+            {
+                Session["TipoPersona"] = "Natural";
+            }
+            if(rbJuridica.Checked == true)
+            {
+                Session["TipoPersona"] = "Juridica";
+            }
+
+            Session["ciudad"] = ddlCiudad.SelectedItem.ToString();
             Response.Redirect("Form2.aspx");
+
+
 
         }
     }
